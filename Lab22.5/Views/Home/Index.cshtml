@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>What up doe</h1>
+</div>
+
+
+<form action="/Home/Login" method="get">
+    <label class="control-label col-md-2" for="UserName">User Name</label>
+    
+        <input class="form-control text-box single-line" id="UserName" name="UserName" type="text">
+   
+
+    <label class="control-label col-md-2" for="FavoriteColor">Favorite Color</label>
+    
+        <select class="form-control" id="Favorite Color" name="FavoriteColor">
+            <option selected disabled>Please select a color</option>
+            <option style="background-color:mediumpurple">Purple</option>
+            <option style="background-color:aquamarine">Aquamarine</option>
+            <option style="background-color:cornflowerblue">Cornflower Blue</option>
+        </select>
+  
+
+    <p>Pick a food</p>
+   
+        <label class="checkbox">
+            <input type="checkbox" value="option1" name="Food"> Pizza
+        </label>
+        <label class="checkbox">
+            <input type="checkbox" value="option2" name="Food"> Tacos
+        </label>
+        <label class="checkbox">
+            <input type="checkbox" value="option3" name="Food"> Thai
+        </label>
+ 
+
+    <input type="submit" value="Submit" class="btn btn-default" onclick="return CheckEmail()" />
+    <input type="reset" value="Clear form" class="btn btn-default" />
+    </form>
+}
